@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
@@ -13,14 +13,20 @@
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet/less" type="text/less" href="css/index.less">
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
-
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
 <!--头部内容：包含头像，姓名，简介-->
 <header class="header">
   <div class="header-wrap container">
     <div class="row clearfix">
-      <div class="head-img col-md-3 col-sm-3 col-xs-12">
+      <div class="header-title hidden-lg hidden-md hidden-sm">个人简历</div>
+      <div class="head-img col-md-3 col-sm-3 hidden-xs">
         <img src="img/head.jpg" title="照片" alt="照片"/>
       </div>
       <div class="head-content col-md-9 col-sm-9 hidden-xs">
@@ -61,12 +67,14 @@
           <ul>
             <!--盒子内容部分-->
             <li>姓名：张逸</li>
-            <li>性别：男 | 年龄：28 | 籍贯：安徽阜阳</li>
-            <li><span class="iconfont icon-phone">手机：</span>17682833275 |
-                <span class="iconfont icon-youxiang1">email：</span>535286413@qq.com
-            </li>
-            <li><span class="iconfont icon-github">Git：</span><a href="https://github.com/xyberlang" target="_blank">github.com/xyberlang</a> |
-              求职意向：前端工程师</li>
+            <li>性别：男</li>
+            <li>年龄：28</li>
+            <li>籍贯：安徽阜阳</li>
+            <li><span class="iconfont icon-phone">手机：</span>17682833275</li>
+            <li><span class="iconfont icon-youxiang1">email：</span>535286413@qq.com</li>
+            <li><span class="iconfont icon-github">Git：</span>
+              <a href="https://github.com/xyberlang" target="_blank">github.com/xyberlang</a></li>
+            <li>求职意向：前端工程师</li>
           </ul>
         </div>
 <!--        教育经历-->
